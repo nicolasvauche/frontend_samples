@@ -16,11 +16,31 @@ button {
     cursor: pointer;
     transition: all 0.3s ease-in-out;
 
-    i {
+    i,
+    path {
         transition: inherit;
+    }
+
+    &:hover {
+        path {
+            fill: #4fade8;
+        }
     }
 }
 
-img {
+img,
+svg {
     max-width: 100%;
+}
+
+svg {
+    fill: #ccc;
+    stroke: #ffffff;
+    stroke-width: 1;
+    transition: 0.6s fill;
+
+    path {
+        fill: inherit;
+        stroke: inherit;
+    }
 }
